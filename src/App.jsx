@@ -5,7 +5,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
 
  const fetchNews = async () => {
-  const response = await fetch(`http://localhost:5000/api/news?q=${searchTerm || "latest"}`);
+  const response = await fetch(`https://news-backend-d3a3.onrender.com/api/news?q=${searchTerm || "latest"}`);
   return response.json();
 };
 
